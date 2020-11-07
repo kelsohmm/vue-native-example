@@ -14,12 +14,14 @@ import { Root } from "native-base";
 
 import MapScreen from "./screens/map";
 import WebScreen from "./screens/web";
+import FormScreen from "./screens/form";
 import DrawerScreen from "./screens/drawer";
 
 const MapNavigator = createDrawerNavigator(
   {
     Map: { screen: MapScreen },
     Web: { screen: WebScreen },
+    Form: { screen: FormScreen },
   },
   {
     initialRouteName: "Map",
