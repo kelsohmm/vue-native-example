@@ -1,0 +1,52 @@
+{
+  "name": "lokey",
+  "version": "0.2.0",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "jest-expo": "^37.0.0",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "16.8.6",
+    "vue-native-scripts": "~0.1.4"
+  },
+  "main": "./node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "lint": "eslint ./src ./App.vue --ext .js,.vue",
+    "lint:fix": "eslint ./src ./App.vue --ext .js,.vue --fix",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "expo": "^37.0.1",
+    "expo-location": "~8.1.0",
+    "expo-permissions": "~8.1.0",
+    "geolib": "^3.3.1",
+    "moment": "^2.26.0",
+    "native-base": "^2.13.8",
+    "react": "16.9.0",
+    "react-native": "0.61.4",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-logs": "^2.0.2",
+    "react-native-maps": "~0.26.1",
+    "react-native-paper": "^2.16.0",
+    "react-native-push-notification": "^3.1.9",
+    "react-native-reanimated": "~1.7.0",
+    "react-native-screens": "~2.2.0",
+    "react-native-webview": "^10.10.2",
+    "vue-native-core": "~0.1.4",
+    "vue-native-helper": "~0.1.4",
+    "vue-native-router": "~0.1.1"
+  }
+}

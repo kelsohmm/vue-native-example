@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Efekty 3D w CSS3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <style>
+main {
+    background: #eee;
+    padding: 50px 50px;
+}
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>CSS animacje i 3D</h1>
+
+        <h2>Ksztalty </h2>
+        <p>
+            Sprytne wykorzystanie CSSa pozwala na stworzenie wielu ksztaltow geometrycznych bez potrzeby wykorzystania obrazkow. <br/>
+            Pozwala to na tworzenie ciekawych efektow przy zminimalizowaniu wagi strony, <br/>
+            ktora ma decydujacy wplyw na czas wczytywania strony, a przez to rowniez na ranking SEO (w Google)
+        </p>
+
+        <ul>
+            <li><b>Prostokat</b> - podstawowy ksztalt na jakich operuje CSS, ustawimy height oraz width</li>
+            <li><b>Kolo</b> - wlasnosc border-radius pozwala na kontrolowanie zaokraglenia rogow prostokata. Ustawienie
+                wartosci wiekszej niz polowa szerokosci skutkuje calkowitym zaokragleniem
+            </li>
+            <li><b>Gradient</b> - tlem obiektu moze byc gradient czyli przejscie kolorow</li>
+            <li><b>Cienie</b> - box-shadow pozwala na dodanie cienia do obiektu, dajac efekt warstwowosci projektu</li>
+            <li><b>Trojkat</b> - poprzez ustawienie obrysu dolnego na dany kolor, oraz ustawienie obrysow bocznych
+                jako przezroczyste, obrys zostanie wyswietlony w formie trojkata
+            </li>
+            <li><b>Pacman</b> - polaczenie trojkatnego obrysu z zaokraglonymi rogami</li>
+
+        </ul>
+        <script async src="//jsfiddle.net/kelsohmm/g7cfxpve/38/embed/result,css,html/"></script>
+
+        Więcej ciekawych kształtów z użyciem CSS: <a href="https://css-tricks.com/the-shapes-of-css/">https://css-tricks.com/the-shapes-of-css/</a>
+
+        <h2>Transformacje 2D</h2>
+        <p>CSS pozwala na przeksztalcanie obiektow w plaszczyznie 2D za pomoca wlasnosci <b>transform</b></p>
+        <p>Mozliwe przeksztalcenia to:</p>
+        <ul>
+            <li><b>translate</b> - przemieszczenie obiektu w przestrzeni</li>
+            <li><b>rotate</b> - obrot obiektu</li>
+            <li><b>scale</b> - powiekszanie/pomniejszanie obiektow</li>
+            <li><b>skew</b> - skrzywienie, dodanie perspektywy</li>
+        </ul>
+        <script async src="//jsfiddle.net/kelsohmm/ewnLpru7/35/embed/result,css,html/"></script>
+
+
+        <h2>Przejscia</h2>
+        <p>Przejscia pozwalaja na plynne zmiany wartosci wlasciwosci obiektow</p>
+        <p>Przejscie takie moze byc spowodowane np. najechaniem kursorem na obiekt (hover) lub dodaniem do niego klasy za pomoca Javascript</p>
+
+        <p>Wlasnosci przejsc:</p>
+        <ul>
+            <li><b>transition-property</b> - nazwa wlasciwosci obiektu ktorej dotyczy przejscie</li>
+            <li><b>transition-duration</b> - czas przejscia</li>
+            <li><b>transition-timing-function</b> - krzywa szybkosci zmiany wartosci.
+                   Np dla <i>linear</i> wartosc bedzie zmienia sie w stalym tempie, a dla <i>ease</i> zacznie sie powoli i bedzie przyspieszac</li>
+            <li><b>transition-delay</b> - opoznienie z jakim ma ruszyc animacja</li>
+
+        </ul>
+        <p>Wartosci poczatkowe i koncowe przejsc brane sa ze zmian w klasach obiektu.</p>
+        <script async src="//jsfiddle.net/kelsohmm/x8ujbw1p/80/embed/result,css,html/"></script>
+
+
+        <h2>Animacje</h2>
+        <p>W przypadkach kiedy jednorazowe przejscie nie wystarczy, CSS oferuje mozliwosc animacji</p>
+        <p>Glowna roznica miedzy animacjami a przejsciami jest to ze animacje odtwarzane sa automatycznie, z momentem powstania obiektu,
+           a nie w chwili zmiany wartosci wlasciwosci.
+        </p>
+        <p>Animacje pozwalaja rowniez na zlozone sekwencje przejsc za pomoca konstrukcji <i>@keyframes</i>.
+           Elementy sekwencji ustalane sa za pomoca podania procentu okreslajacego czas zmiany w odniesieniu do czasu trwania calej animacji,
+           oraz wartosci wlasnosci ktore maja zostac zmienione w danej chwili.
+        </p>
+
+        <p>Animacje definiuje sie za pomocna nastepujacych wlasnosci:</p>
+        <ul>
+            <li><b>name</b> - zdefiniowanego wczesniej keyframe</li>
+            <li><b>duration</b> - czas trwania calej animacji</li>
+            <li><b>iteration-count</b> - ile razy ma zostac wyswietlona cala animacja</li>
+            <li><b>direction</b> - kolejnosc w jakiej maja byc wyswietlane keyframe'y przy kolejnych iteracjach animacji</li>
+            <li><b>timing-function</b> - krzywa szybkosci zmian wartosci</li>
+        </ul>
+        <script async src="//jsfiddle.net/kelsohmm/4h05mbrd/14/embed/result,css,html/"></script>
+
+        <h2>Sceny i transformacje 3D</h2>
+        <p>CSS3 pozwala na skladanie dwuwymiarowych ksztaltow w ksztalty trojwymiarowe. Aby tu uzyskac, musimy stworzyc nastepujace elementy:</p>
+        <ul>
+            <li><b>scena</b> - kontener bedacy scena dla obiektow 3D. Ustalamy jej wielkosc oraz <i>perspective</i>, czyli odleglosc "kamery" od elementow na scenie.</li>
+            <li><b>obiekt</b> - kontener zawierajacy obiekt 2D. Musi miec zdefiniowane <i>transform-style: preserve-3d;</i> oraz <i>position: absolute;</i></li>
+            <li><b>ksztalt</b> - figura 2D bedaca czescia obiektu. Wszystkie jej przeksztalcenia odbywaja sie w odniesieniu do zawierajacego ja obiektu. Wymaga <i>position: absolute;</i></li>
+        </ul>
+
+        <p>Transformacje obiektow 3D polegaja na uzyciu wlasciwosci <i>transform</i> na obiekcie, i uzyciu przeksztalcen 3D (np. <i>translate3D</i>)</p>
+        <script async src="//jsfiddle.net/kelsohmm/af4Lwn0c/51/embed/result,css,html/"></script>
+
+        <h2>Animacje 3D</h2>
+        <p>Animacje obiektow 3D dzialaja tak samo jak zwykle animacje. Animujac obiekt, silnik renderujacy automatycznie przeksztalca jego elementy</p>
+        <script async src="//jsfiddle.net/kelsohmm/rhznc6f1/56/embed/result,css,html/"></script>
+
+        <h2>Przyklad zaawansowany</h2>
+        <p>W tym przykladzie, JS jest uzywany do zmiany klasy <i>stage</i> kazdym kliknieciu na obiekt, ze stage1 na stage2 itp.</p>
+        <p>Wszystkie przejscia sa zaimplementowane w czystym CSS</p>
+
+        <script async src="//jsfiddle.net/kelsohmm/tpcu5x4L/8/embed/result,css,html,js/"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "PTI",
+    "slug": "PTI",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.4",
+    "orientation": "portrait",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.pti.app",
+      "buildNumber": "1.4",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription":  "Prosze o lokalizacje",
+      }
+    },
+    "android": {
+      "package": "com.pti.app",
+      "versionCode": 5,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCh9rYsb-TODe6PZiib-SWPZ1U1jsPuSoE"
+        }
+      }
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "json",
+        "ts",
+        "tsx",
+        "vue"
+      ]
+    }
+  }
+}
