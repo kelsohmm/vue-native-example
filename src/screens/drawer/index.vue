@@ -44,6 +44,11 @@ export default {
           name: "Strona",
           route: "Web",
           icon: "globe"
+        },
+        {
+          name: "Formularz",
+          route: "Form",
+          icon: "list"
         }
       ]
     };

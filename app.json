@@ -26,9 +26,7 @@
       "package": "com.pti.app",
       "versionCode": 5,
       "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyCh9rYsb-TODe6PZiib-SWPZ1U1jsPuSoE"
-        }
+
       }
     },
     "packagerOpts": {
